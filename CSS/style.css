@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+header {
+    background: #fff;
+    box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 30%);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+header .container .logo {
+    font-size: 31px;
+    background: -webkit-linear-gradient(315deg, #4fab81 25%, #36abff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 5s anmate linear infinite;
+    transition: .3s;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    position: relative;
+    padding: 10px;
+    color: #00000059;
+    transition: .3s;
+}
+
+header nav ul li a::before {
+    content: "";
+    background: #25d5a4ba;
+    position: absolute;
+    box-shadow: 3px 3px 10px #25d5a4ba;
+    inset: 0;
+    height: 3px;
+    width: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+header nav ul li a:hover {
+    color: #25d5a4ba;
+}
+
+header nav ul li a:hover::before {
+    width: 100%;
+}
+
+header li select {
+    width: 120px;
+}
+
+header li select option {
+    color: #25d5a4ba;
+}
+
+header nav .d {
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #25d5a4ba;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px 3px #25d5a4ba;
+    margin-right: 22px
+}
+
+header nav .X {
+    width: 35px;
+    height: 35px;
+    background: aquamarine;
+    display: none;
+    box-shadow: 0px 2px 20px #157eb9;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+header .bars {
+    font-size: 25px;
+    color: #60e0bc;
+    display: none;
+}
+
+@media (max-width:808px) {
+    header .container {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width:768px) {
+    header .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width:728px) {
+    header .container {
+        padding: 10px 20px;
+    }
+
+    header .container .bars {
+        display: block;
+    }
+
+    header nav .X {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 40px;
+    }
+
+    header nav {
+        display: flex;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #673ab7, #00bcd4);
+        flex-direction: column;
+        transform: translate(-800px, 0);
+        transition: .3s;
+    }
+    
+    header nav.active {
+        transform: translate(0, 0);
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 60%;
+    }
+
+    header nav .d {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+    }
+
+    header nav ul li a {
+        color: #00e7ff;
+    }
+}
+
+/* anmation  */
+@keyframes anmate {
+    10% {
+        background: -webkit-linear-gradient(315deg, #18573b 25%, #0095ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: -webkit-linear-gradient(315deg, #2e59b6 25%, #172ad8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: -webkit-linear-gradient(315deg, #4fab81 25%, #a412dd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* anmation */
