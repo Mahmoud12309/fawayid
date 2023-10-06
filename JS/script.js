@@ -7,4 +7,19 @@ bars.addEventListener('click',() => {
 })
 x.addEventListener('click',() => {
     nav.classList.remove("active");
-})
+});
+
+let heartm = "light",
+d = document.querySelector(".d i"),
+body = document.querySelector("body");
+d.addEventListener("click", () => {
+    if (heartm === "light") {
+        heartm = "dark";
+        d.className = "fa-solid fa-moon";
+        body.classList.add("dark");
+    } else {
+        d.className = "fa-regular fa-sun";
+        heartm = "light";
+        body.classList.remove("dark");
+    }
+});
