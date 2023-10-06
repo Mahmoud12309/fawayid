@@ -15,6 +15,18 @@
     padding: 50px 50px;
 }
 
+@media (max-width:574px) {
+    .container {
+        padding: 50px 10px;
+    }
+}
+
+@media (max-width:519px) {
+    .container {
+        padding: 50px 0;
+    }
+}
+
 .sec {
     width: 100%;
 }
@@ -267,6 +279,69 @@ header .bars {
     word-spacing: 7px;
     font-weight: 500;
     line-height: 2.8;
+}
+
+.landing .container .right .body .keywords {
+    padding: 5px;
+    background-color: #eee;
+}
+
+.landing .container .right .body .keywords h4 {
+    color: #fff;
+    width: 177px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: var(--main-color);
+    box-shadow: 2px 2px 20px orange;
+    margin: 5px 0;
+}
+
+.landing .container .right .body .keywords .kywords {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.landing .container .right .body .keywords .key {
+    padding: 5px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+@media (max-width:749px) {
+    .landing .container {
+        flex-direction: column;
+    }
+
+    .landing .container .right,
+    .landing .container .left {
+        width: 100%;
+    }
+}
+
+@media (max-width:474px) {
+    .landing .container .right .head h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:418px) {
+    .landing .container .right .head h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:398px) {
+    .landing .container .right .head {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width:368px) {
+    .landing .container .right .head .socil a {
+        margin: 0 5px;
+    }
 }
 
 /* anmation  */
