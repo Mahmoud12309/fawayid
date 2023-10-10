@@ -405,6 +405,28 @@ body.dark .landing .container {
     color: #fff;
 }
 
+@media (max-width: 1036px) {
+    .landing .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing .container .right {
+        width: 100%;
+        order: 1;
+    }
+
+    .landing .container .left {
+        width: 100%;
+        margin: 10px 10px;
+    }
+
+    .landing .container .left .card {
+        min-height: 141px;
+        justify-content: space-evenly;
+    }
+}
+
 /* anmation  */
 @keyframes anmate {
     10% {
