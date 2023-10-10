@@ -214,14 +214,29 @@ header .bars {
 }
 
 .landing .container {
+    display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    display: flex;
+}
+
+body.dark .landing .container {
+    background-color: rgba(4, 14, 43, 0.945);
 }
 
 .landing .container .left {
     width: 30%;
+    padding: 5px;
+    background: #fff;
+    margin: 0 10px;
+}
+
+.landing .container .left .head-left {
+    background-color: #eee;
+}
+
+.landing .container .left .head-left .heading-left {
+    color: var(--main-color);
+    padding: 3px;
 }
 
 .landing .container .right {
@@ -342,6 +357,52 @@ header .bars {
     .landing .container .right .head .socil a {
         margin: 0 5px;
     }
+}
+
+.landing .container .left .card {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    transition: .3s;
+    flex-direction: column;
+    margin: 10px 0;
+    background-image: url("../image/rowman.jpg");
+    background-position: center;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.landing .container .left .card.f {
+    background-image: url("../image/fraw.jpg");
+}
+
+.landing .container .left .card.apple {
+    background-image: url("../image/apple.jpg");
+}
+
+.landing .container .left .card.Mango {
+    background-image: url("../image/Mango.jpg");
+
+}
+
+.landing .container .left .card.Fig {
+    background-image: url("../image/fig.jpg");
+}
+
+.landing .container .left .card.Pineapple {
+    background-image: url("../image/Pineapple.jpg");
+}
+
+.landing .container .left .card p {
+    font-size: 16px;
+    line-height: 2;
+    margin: 5px;
+    color: #fff;
+}
+
+.landing .container .left .card h4 {
+    color: #fff;
 }
 
 /* anmation  */
