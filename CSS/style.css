@@ -413,7 +413,6 @@ body.dark .landing .container {
 
     .landing .container .right {
         width: 100%;
-        order: 1;
     }
 
     .landing .container .left {
