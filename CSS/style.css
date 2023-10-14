@@ -385,6 +385,10 @@ body.dark .landing .container {
     background-image: url("../image/Mango.jpg");
 
 }
+.landing .container .left .card.orange {
+    background-image: url("../image/orange-2.jpg");
+
+}
 
 .landing .container .left .card.Fig {
     background-image: url("../image/fig.jpg");
@@ -413,6 +417,7 @@ body.dark .landing .container {
 
     .landing .container .right {
         width: 100%;
+        /* order: 1; */
     }
 
     .landing .container .left {
