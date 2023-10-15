@@ -35,6 +35,10 @@ body.dark {
     background: #000c18;
 }
 
+body.f {
+    --main-color: #f50912;
+}
+
 header {
     background: #fff;
     box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 30%);
@@ -267,7 +271,7 @@ body.dark .landing .container {
 .landing .container .right .head .socil a {
     width: 30px;
     height: 30px;
-    background-color: orange;
+    background-color: var(--main-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -307,7 +311,7 @@ body.dark .landing .container {
     border-radius: 30px;
     text-align: center;
     background-color: var(--main-color);
-    box-shadow: 2px 2px 20px orange;
+    box-shadow: 2px 2px 20px var(--main-color);
     margin: 5px 0;
 }
 
@@ -385,6 +389,7 @@ body.dark .landing .container {
     background-image: url("../image/Mango.jpg");
 
 }
+
 .landing .container .left .card.orange {
     background-image: url("../image/orange-2.jpg");
 
