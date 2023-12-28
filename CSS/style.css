@@ -12,8 +12,14 @@
 }
 
 .ul{
-    padding: 10px;
-    list-style: circle;
+    padding: 5px 37px;
+    font-size: 20px;
+    line-height: 2.9;
+}
+.ul li{
+        list-style: circle;
+        font-weight: bold;
+    color: var(--main-color);
 }
 .container {
     padding: 50px 50px;
