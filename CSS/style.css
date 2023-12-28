@@ -11,6 +11,10 @@
     --main-color: orange;
 }
 
+.ul{
+    padding: 10px;
+    list-style: circle;
+}
 .container {
     padding: 50px 50px;
 }
