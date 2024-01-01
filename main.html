@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="fawayid,فوائد,فوائد الطعام,فوائد الفواكة,الفواكة ">
+  <meta name="description"
+    content="موقع fawayid - فوائد هو موقع مختص بمعلومات عن الفواكة وفوائدها وأضرارها. يحتوي الموقع على مقالات مفيدة وموثوقة تشرح خصائص الفواكة المختلفة وكيفية استخدامها للحفاظ على صحة الجسم والبشرة. كما يقدم الموقع نصائح وحيل للاستمتاع بالفواكة بطرق مبتكرة وشهية. إذا كنت تبحث عن مصدر موثوق للتعرف على الفواكة وفوائدها، فلا تتردد في زيارة موقع fawayid - فوائد.">
+  <link href="image/logo.png" rel="shortcut icon" type="image/x-icon">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- google search console -->
+  <meta name="google-site-verification" content="3i0JXcy5_6lZoSIULIXOXVSjyvXF5eClgL_O2r04wRU" />
+  <!-- google search console -->
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Css file -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Css file -->
+  <title>فوائد - fawayid</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">فوائد</a>
+      <nav>
+        <a href="#" class="X"><i class="fa-regular fa-circle-xmark"></i></a>
+        <ul>
+          <li><a href="main.html" data-name="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
+          <li><a href="#" data-name="الفواكة">الفواكة</a></li>
+          <li><a href="#" data-name="نصائح">نصائح</a></li>
+          <li><a href="#" data-name="فوائد الفاكهه">فوائد الفاكهه</a></li>
+          <li><a href="#" data-name="اضرار الفاكهه">اضرار الفاكهه</a></li>
+          <li>
+            <select>
+              <label>
+                <option>Arabic</option>
+
+              </label>
+              <label>
+                <option>English</option>
+              </label>
+            </select>
+          </li>
+        </ul>
+
+        <a href="#" class="d"><i class="fa-regular fa-sun"></i></a>
+      </nav>
+      <a href="#" class="bars"><i class="fa-solid fa-bars-staggered"></i></a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(image/tray-ingredients-including-variety-ingredients-including-bowl-lemon-beans-bowl-lemon_1340-26767.jpg);">
+          <h1>فوائد - fawayid</h1>
+          <P>موقع فوائد - fawayid هو موقع تعليمي نوعا ما  لأنه يتكلم عن فوائد الفواكة والحلويات وجميع الاطعمة واضرارها</P>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url(image/assortment-winter-fruits-such-as-avocado-tangerines-kiwi-lemon-oranges-persimmons-fruit-bowl-kitchen-counter_123827-29009.jpg);">
+          <h1>فوائد - fawayid</h1>
+          <P>موقع فوائد - fawayid هو موقع تعليمي نوعا ما  لأنه يتكلم عن فوائد الفواكة والحلويات وجميع الاطعمة واضرارها</P>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url(image/fruit-frame-with-pineapples-pineapples_1340-26312.jpg);">
+          <h1>فوائد - fawayid</h1>
+          <P>موقع فوائد - fawayid هو موقع تعليمي نوعا ما  لأنه يتكلم عن فوائد الفواكة والحلويات وجميع الاطعمة واضرارها</P>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
